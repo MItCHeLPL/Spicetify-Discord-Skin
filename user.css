@@ -93,18 +93,18 @@ span.artist-artistVerifiedBadge-badge svg:nth-child(1) {
 }
 
 /** Hightlight selected playlist */
-.main-rootlist-rootlistItemLink.main-rootlist-rootlistItemLinkActive {
+.main-rootlist-rootlistItemLink.main-rootlist-rootlistItemLinkActive, .main-rootlist-rootlistItemLink-scss.main-rootlist-rootlistItemLinkActive-scss {
     background: #393C43;
     border-radius: 4px;
     padding: 0 10px;
     margin: 0 5px 0 -10px;
 }
 
-.main-navBar-navBarLinkActive {
+.main-navBar-navBarLinkActive, .main-navBar-navBarLinkActive-scss {
     background: #393C43;
 }
 
-.main-contextMenu-menu {
+.main-contextMenu-menu, .main-contextMenu-menu-scss {
     background-color: #393C43;
 }
 
@@ -118,20 +118,20 @@ span.artist-artistVerifiedBadge-badge svg:nth-child(1) {
 }
 
 /** Cards */
-.main-cardImage-imageWrapper {
+.main-cardImage-imageWrapper, .main-cardImage-imageWrapper-scss {
     background-color: transparent;
 }
 
-.main-rootlist-rootlistDivider {
+.main-rootlist-rootlistDivider, .main-rootlist-rootlistDivider-scss {
     background-color: unset;
 }
 
-.main-nowPlayingBar-nowPlayingBar {
+.main-nowPlayingBar-nowPlayingBar, .main-nowPlayingBar-nowPlayingBar-scss  {
     height: var(--player-bar-height);
 }
 
 /*Friends*/
-.main-buddyFeed-expanded
+.main-buddyFeed-expanded, .main-buddyFeed-expanded-scss
 {
     padding-top: 25px;
     background-color: #2F3136 !important;
@@ -139,41 +139,44 @@ span.artist-artistVerifiedBadge-badge svg:nth-child(1) {
 
 .main-buddyFeed-activityMetadata .main-buddyFeed-artistAndTrackName a,
 .main-buddyFeed-activityMetadata .main-buddyFeed-username a,
-.main-buddyFeed-activityMetadata .main-buddyFeed-playbackContextLink
+.main-buddyFeed-activityMetadata .main-buddyFeed-playbackContextLink,
+.main-buddyFeed-activityMetadata-scss .main-buddyFeed-artistAndTrackName-scss a,
+.main-buddyFeed-activityMetadata-scss .main-buddyFeed-username-scss a,
+.main-buddyFeed-activityMetadata-scss .main-buddyFeed-playbackContextLink-scss
 {
     color:#8E9197 !important;
 }
 
 /*Left sidebar*/
-.main-rootlist-rootlistDividerGradient, .main-rootlist-rootlistDivider
+.main-rootlist-rootlistDividerGradient, .main-rootlist-rootlistDivider, .main-rootlist-rootlistDividerGradient-scss, .main-rootlist-rootlistDivider-scss
 {
     opacity: 0;
 }
 
-.main-navBar-navBarLinkActive
+.main-navBar-navBarLinkActive, .main-navBar-navBarLinkActive-scss
 {
     background-color: #393C43;
 }
 
-.main-rootlist-textWrapper
+.main-rootlist-textWrapper, .main-rootlist-textWrapper-scss
 {
     color: #858A91;
 }
 
 /*Hide scrollbars*/
-.main-rootlist-rootlistPlaylistsScrollNode .os-scrollbar, .main-buddyFeed-scrollableArea .os-scrollbar
+.main-rootlist-rootlistPlaylistsScrollNode .os-scrollbar, .main-buddyFeed-scrollableArea .os-scrollbar, .main-rootlist-rootlistPlaylistsScrollNode-scss .os-scrollbar, .main-buddyFeed-scrollableArea-scss .os-scrollbar
 {
     visibility: hidden;
 }
 
 /*Now playing color*/
-.main-trackList-rowTitle, .standalone-ellipsis-one-line, .main-type-ballad
+.main-trackList-rowTitle, .standalone-ellipsis-one-line, .main-type-ballad, .main-trackList-rowTitle-scss, .standalone-ellipsis-one-line-scss, .main-type-ballad-scss
 {
 	color: #FFFFFF !important;
 }
 
 /*scrollbar*/
-.os-scrollbar-handle
+.os-scrollbar-handle, .os-scrollbar-handle-scss
 {
     color: #202225 !important;
     background-color: #202225 !important;
@@ -181,7 +184,7 @@ span.artist-artistVerifiedBadge-badge svg:nth-child(1) {
     width:7px;
 }
 
-.os-scrollbar-track
+.os-scrollbar-track, .os-scrollbar-track-scss
 {
     color: #2E3338 !important;
     background-color: #2E3338 !important;
@@ -190,19 +193,24 @@ span.artist-artistVerifiedBadge-badge svg:nth-child(1) {
 }
 
 /*Other*/
-.main-playPauseButton-button {
+.main-playPauseButton-button, .main-playPauseButton-button-scss {
     background-color: var(--spice-button);
     color: white;
 }
 
-.progress-bar__fg
+.progress-bar__fg, .progress-bar__fg-scss
 {
     background-color: #FFFFFF !important;
 }
 
+.main-trackList-playingIcon-scss
+{
+    color: white;
+}
+
 /*Discord status*/
 /*Online status*/
-.main-buddyFeed-avatarContainer .main-avatar-withBadge::after
+.main-buddyFeed-avatarContainer-scss .main-avatar-withBadge-scss::after, .main-buddyFeed-avatarContainer .main-avatar-withBadge::after
 {
     background-color: #389E58;
     
@@ -222,11 +230,11 @@ span.artist-artistVerifiedBadge-badge svg:nth-child(1) {
     z-index: 100;
 }
 
-.main-buddyFeed-avatarContainer .main-avatar-withBadge /*Avatar Opacity when online*/
+.main-buddyFeed-avatarContainer-scss .main-avatar-withBadge-scss, .main-buddyFeed-avatarContainer .main-avatar-withBadge /*Avatar Opacity when online*/
 {
     opacity: 1 !important;
 }
-.main-buddyFeed-avatarContainer .main-avatar-avatar /*Avatar Opacity when offline*/
+.main-buddyFeed-avatarContainer-scss .main-avatar-avatar-scss, .main-buddyFeed-avatarContainer .main-avatar-avatar /*Avatar Opacity when offline*/
 {
     opacity: 0.3;
 }
