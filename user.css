@@ -217,24 +217,24 @@ aside .os-scrollbar-track, aside .os-scrollbar-track-scss
 
 /*Discord status*/
 /*Online status*/
-.main-avatar-withBadge-scss::after, .main-buddyFeed-avatarContainer .main-avatar-withBadge::after  main-avatar-withBadge-scss
+.main-avatar-withBadge-scss::after, .main-buddyFeed-avatarContainer .main-avatar-withBadge::after
 {
-    background-color: #389E58;
+    background-color: #389E58 !important;
     
-    border: solid #2F3136 2px;
+    border: solid #2F3136 2px !important;
     border-radius: 50%;
 
-    content: "";
+    content: "" !important;
 
-    height: 11px;
-    width: 11px;
+    height: 11px !important;
+    width: 11px !important;
 
-    top: 25px;
-    right: 0;
+    top: 25px !important;
+    right: 0 !important;
 
-    position: absolute;
+    position: absolute !important;
 
-    z-index: 100;
+    z-index: 100 !important;
 }
 
 aside figure.main-avatar-withBadge-scss, .main-buddyFeed-avatarContainer .main-avatar-withBadge /*Avatar Opacity when online*/
