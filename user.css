@@ -181,7 +181,8 @@ span.artist-artistVerifiedBadge-badge svg:nth-child(1) {
     color: #202225 !important;
     background-color: #202225 !important;
     border-radius: 5px;
-    width:7px;
+    width:5px;
+    margin-right: 0px;
 }
 
 .os-scrollbar-track, .os-scrollbar-track-scss
@@ -189,7 +190,13 @@ span.artist-artistVerifiedBadge-badge svg:nth-child(1) {
     color: #2E3338 !important;
     background-color: #2E3338 !important;
     border-radius: 5px;
-    width:7px;
+    width:5px;
+    margin-right: -5px !important;
+}
+
+aside .os-scrollbar-track, aside .os-scrollbar-track-scss
+{
+    display: none;
 }
 
 /*Other*/
@@ -210,7 +217,7 @@ span.artist-artistVerifiedBadge-badge svg:nth-child(1) {
 
 /*Discord status*/
 /*Online status*/
-.main-buddyFeed-avatarContainer-scss .main-avatar-withBadge-scss::after, .main-buddyFeed-avatarContainer .main-avatar-withBadge::after
+.main-avatar-withBadge-scss::after, .main-buddyFeed-avatarContainer .main-avatar-withBadge::after  main-avatar-withBadge-scss
 {
     background-color: #389E58;
     
@@ -230,11 +237,11 @@ span.artist-artistVerifiedBadge-badge svg:nth-child(1) {
     z-index: 100;
 }
 
-.main-buddyFeed-avatarContainer-scss figure.main-avatar-withBadge-scss, .main-buddyFeed-avatarContainer .main-avatar-withBadge /*Avatar Opacity when online*/
+aside figure.main-avatar-withBadge-scss, .main-buddyFeed-avatarContainer .main-avatar-withBadge /*Avatar Opacity when online*/
 {
     opacity: 1 !important;
 }
-.main-buddyFeed-avatarContainer-scss figure, .main-buddyFeed-avatarContainer .main-avatar-avatar /*Avatar Opacity when offline*/
+aside figure, .main-buddyFeed-avatarContainer .main-avatar-avatar /*Avatar Opacity when offline*/
 {
     opacity: 0.3;
 }
