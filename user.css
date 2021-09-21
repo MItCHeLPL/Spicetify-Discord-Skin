@@ -217,7 +217,7 @@ aside .os-scrollbar-track, aside .os-scrollbar-track-scss
 
 /*Discord status*/
 /*Online status*/
-.main-avatar-withBadge-scss::after, .main-buddyFeed-avatarContainer .main-avatar-withBadge::after
+.main-buddyFeed-avatarContainer figure[class*="main-avatar-avatar "]::after, .main-buddyFeed-avatarContainer .main-avatar-withBadge::after
 {
     background-color: #389E58 !important;
     
@@ -237,7 +237,7 @@ aside .os-scrollbar-track, aside .os-scrollbar-track-scss
     z-index: 100 !important;
 }
 
-aside figure.main-avatar-withBadge-scss, .main-buddyFeed-avatarContainer .main-avatar-withBadge /*Avatar Opacity when online*/
+aside figure[class*="main-avatar-avatar "], .main-buddyFeed-avatarContainer .main-avatar-withBadge /*Avatar Opacity when online*/
 {
     opacity: 1 !important;
 }
